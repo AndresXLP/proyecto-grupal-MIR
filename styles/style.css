@@ -1,0 +1,18 @@
+.carousel-item {
+  width: 100%;
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+}
+.image-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  .carousel-item {
+    height: 200px;
+  }
+}
