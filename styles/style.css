@@ -1,18 +1,13 @@
 .carousel-item {
-  height: 60vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
+  width: 100%;
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+}
+.image-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: contain;
+  background-size: cover;
 }
-.carousel-item img {
-  width: auto;
-  height: auto;
-  margin: -180px auto;
-}
-
-/* .carousel-inner {
-  height: 400px;
-} */
