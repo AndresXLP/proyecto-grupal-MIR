@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
 
-    <!--bootstrap-->
+    <!--Bootstrap Link-->
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -15,12 +15,14 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
-    <!--css-->
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles/style.css" />
     <script src="/scripts/ciudades.js"></script>
-    <title>Landing</title>
+    <title>Sticky Footer Navbar</title>
   </head>
   <body class="d-flex flex-column h-100">
     <header>
@@ -56,7 +58,86 @@
 
     <!-- Begin page content -->
     <main class="flex-shrink-0">
-      <div class="container"></div>
+      <div class="container">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/img/232641266.jpg"
+                class="d-block w-100 fill"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/funny-electrician-installing-plug-with-screwdriver-carrying-mouth.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/repairman-doing-air-conditioner-service.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="container-fluid p-2 border-2 bg-black bg-opacity-25 mt-2">
+          <form class="d-flex">
+            <select
+              class="form-select m-1 shadow-sm"
+              aria-label="Default select example"
+            >
+              <option selected disabled>Selecciona un servicio:</option>
+              <option value="1">Instalar</option>
+              <option value="2">Reparar</option>
+              <option value="3">Mantenimiento</option>
+              <option value="4">Pintar</option>
+            </select>
+            <select class="form-select m-1" aria-label="Default select example">
+              <option selected disabled>Primero selecciona un servicio</option>
+            </select>
+            <select
+              name="ciudades"
+              class="form-select m-1"
+              aria-label="Default select example"
+            >
+              <option selected disabled>Selecciona tu ciudad</option>
+            </select>
+            <select class="form-select m-1" aria-label="Default select example">
+              <option selected disabled>Rango de Precios:</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <button class="btn btn-dark m-1" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer class="footer mt-auto py-3 bg-light">
@@ -72,6 +153,15 @@
       </div>
     </footer>
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
