@@ -37,6 +37,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/styles/sticky-footer-navbar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body class="d-flex flex-column h-100">
     <header>
@@ -198,12 +199,435 @@
                 </div>
               </div>
               <div
-                class="tab-pane fade border border-5 border-top-0"
+                class="tab-pane fade border border-5 border-top-0 mt-3"
                 id="profile"
                 role="tabpanel"
                 aria-labelledby="profile-tab"
               >
-                Mis Tarifas
+                <div
+                  class="
+                    container
+                    p-2
+                    border-2
+                    bg-black bg-opacity-25
+                    rounded
+                    mb-3
+                  "
+                >
+                  <form class="d-flex">
+                    <select
+                      class="form-select m-1"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option selected disabled>Categorias ...</option>
+                      <option value="1">Instalar</option>
+                      <option value="2">Reparar</option>
+                      <option value="3">Mantenimiento</option>
+                      <option value="4">Pintar</option>
+                    </select>
+                    <select
+                      class="form-select m-1"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option selected>Subcategorias ...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <input
+                      type="number"
+                      class="form-control m-1"
+                      id="floatingInput"
+                      placeholder="Tu tarifa $"
+                    />
+                    <button
+                      type="submit"
+                      class="btn btn-dark m-1"
+                      type="submit"
+                    >
+                      Añadir Tarifa
+                    </button>
+                  </form>
+                </div>
+                <h5>Mi Tarifario</h5>
+                <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                  <table
+                    class="table table-bordered table-sm table-striped mb-0"
+                  >
+                    <thead class="">
+                      <tr>
+                        <th scope="col">Categorias</th>
+                        <th scope="col">Subcategorias</th>
+                        <th scope="col">Tarifa</th>
+                        <th class="text-center" scope="col">Editar</th>
+                        <th class="text-center" scope="col">Eliminar</th>
+                        <th class="text-center" scope="col">Activo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckDefault"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Instalar</td>
+                        <td>Base TV</td>
+                        <td>$ 45.000</td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a class="link-dark" href="#"
+                              ><i class="bi bi-pencil-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex justify-content-center">
+                            <a
+                              class="link-danger"
+                              href="#"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                              ><i class="bi bi-trash-fill"></i
+                            ></a>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="
+                              d-flex
+                              form-check form-switch
+                              justify-content-center
+                            "
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <div
                 class="tab-pane fade border border-5 border-top-0"
@@ -226,6 +650,7 @@
         </div>
       </div>
     </main>
+
     <footer class="footer mt-auto py-3 fixed-bottom bg-light">
       <div class="container d-flex justify-content-between align-items-center">
         <div>
@@ -262,4 +687,39 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <!-- Modals -->
+  <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Eliminar tarifa</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">Esta seguro de eliminar esta tarifa</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+          <button type="button" class="btn btn-danger">ELIMINAR!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
