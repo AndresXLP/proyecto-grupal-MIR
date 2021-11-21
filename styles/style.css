@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
   margin-top: 70px;
 }
+.form-control:focus {
+  box-shadow: 10px 0px 0px 0px #ffffff !important;
+  border-color: #4ca746;
+}
 .image-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
