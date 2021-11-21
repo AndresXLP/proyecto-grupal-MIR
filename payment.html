@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
     <!--Bootstrap Link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <link href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/scripts/ciudades.js"></script>
     <!-- Custom styles-->
     <link rel="stylesheet" href="/styles/style.css" />
+<<<<<<< HEAD
     <title>Pagos</title>
 </head>
 <body class="d-flex flex-column h-100" onload="ciudades()">
@@ -106,10 +119,156 @@
                 <div class="d-grid gap-2 col-5 mx-auto mt-4">
                     <button class="btn btn-primary" type="button">Pagar</button>
                 </div>
-            </div>
+=======
+    <title>Pagar Servicio</title>
+  </head>
+  <body class="d-flex flex-column h-100" onload="ciudades()">
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Acceder</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Registrate</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <div class="row py-5 px-1">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="col-lg-6 mt-5">
+          <form method="post" id="paymentForm">
+            <div class="card">
+              <div class="card-header">
+                <div class="row">
+                  <div class="fw-bold col-md-8 col-6 align-self-center">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault"
+                    />
+                    <span>PAGO TARJETA CREDITO/DEBITO</span>
+                  </div>
+                  <div class="col text-end align-bottom">
+                    <img
+                      src="https://img.icons8.com/color/36/000000/visa.png"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/36/000000/mastercard.png"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/36/000000/amex.png"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body" style="height: auto">
+                <div class="form-group mb-4">
+                  <label for="cc-number" class="control-label"
+                    >Número de Tarjeta</label
+                  >
+                  <input
+                    id="cc-number"
+                    type="tel"
+                    class="input-lg form-control cc-number"
+                    autocomplete="cc-number"
+                    placeholder="1234 1234 1234 1234"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-xs-2 col-sm-12 col-md-6 mb-4">
+                    <div class="form-group">
+                      <label for="cc-exp" class="control-label"
+                        >Fecha de Expiración</label
+                      >
+                      <input
+                        id="cc-exp"
+                        type="tel"
+                        class="input-lg form-control cc-exp"
+                        autocomplete="cc-exp"
+                        placeholder="MM / AA"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-12 col-md-6 mb-4">
+                    <div class="form-group">
+                      <label for="cc-cvc" class="control-label"
+                        >Código de verificación</label
+                      >
+                      <input
+                        id="cc-cvc"
+                        type="tel"
+                        class="input-lg form-control cc-cvc"
+                        autocomplete="off"
+                        placeholder="••••"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-2">
+                  <label for="numeric" class="control-label"
+                    >Nombre del Titular</label
+                  >
+                  <input type="text" class="input-lg form-control" id="name" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <div class="row">
+                    <div class="col-md-8 fw-bold col-6 align-self-center">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                      />
+                      <span>PAGO PAYPAL</span>
+                    </div>
+                    <div class="col text-end align-bottom">
+                      <img
+                        src="https://img.icons8.com/color/36/000000/paypal.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+>>>>>>> 91dbb21 (Modifica payment.html)
+            </div>
+          </form>
+          <div class="d-grid gap-2 col-5 mx-auto mt-4">
+            <button class="btn btn-primary" type="button">Pagar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
+<<<<<<< HEAD
  <!-- footer -->
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container d-flex justify-content-between align-items-center">
@@ -125,29 +284,59 @@
     </footer>
       
  <!-- JavaScript -->
+=======
+    <!-- footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <span class="px-1">Siguenos</span>
+          <i class="bi-github px-1" role="img" aria-label="GitHub"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-meta px-1"></i>
+          <i class="bi bi-whatsapp"></i>
+        </div>
+        <span class="text-muted">2021 &copy; </span>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+>>>>>>> 91dbb21 (Modifica payment.html)
     <script>
-      $(function($) {
-        $('[data-numeric]').payment('restrictNumeric');
-        $('.cc-number').payment('formatCardNumber');
-        $('.cc-exp').payment('formatCardExpiry');
-        $('.cc-cvc').payment('formatCardCVC');
-        $.fn.toggleInputError = function(erred) {
-        this.parent('.form-group').toggleClass('has-error', erred);
-        return this;
+      $(function ($) {
+        $("[data-numeric]").payment("restrictNumeric");
+        $(".cc-number").payment("formatCardNumber");
+        $(".cc-exp").payment("formatCardExpiry");
+        $(".cc-cvc").payment("formatCardCVC");
+        $.fn.toggleInputError = function (erred) {
+          this.parent(".form-group").toggleClass("has-error", erred);
+          return this;
         };
-        $('form').submit(function(e) {
-        e.preventDefault();
-        var cardType = $.payment.cardType($('.cc-number').val());
-        $('.cc-number').toggleInputError(!$.payment.validateCardNumber($('.cc-number').val()));
-        $('.cc-exp').toggleInputError(!$.payment.validateCardExpiry($('.cc-exp').payment('cardExpiryVal')));
-        $('.cc-cvc').toggleInputError(!$.payment.validateCardCVC($('.cc-cvc').val(), cardType));
-        $('.cc-brand').text(cardType);
-        $('.validation').removeClass('text-danger text-success');
-        $('.validation').addClass($('.has-error').length ? 'text-danger' : 'text-success');
+        $("form").submit(function (e) {
+          e.preventDefault();
+          var cardType = $.payment.cardType($(".cc-number").val());
+          $(".cc-number").toggleInputError(
+            !$.payment.validateCardNumber($(".cc-number").val())
+          );
+          $(".cc-exp").toggleInputError(
+            !$.payment.validateCardExpiry($(".cc-exp").payment("cardExpiryVal"))
+          );
+          $(".cc-cvc").toggleInputError(
+            !$.payment.validateCardCVC($(".cc-cvc").val(), cardType)
+          );
+          $(".cc-brand").text(cardType);
+          $(".validation").removeClass("text-danger text-success");
+          $(".validation").addClass(
+            $(".has-error").length ? "text-danger" : "text-success"
+          );
         });
-        });
+      });
     </script>
+<<<<<<< HEAD
    
 
 </body>
 </html>
+=======
+  </body>
+</html>
+>>>>>>> 91dbb21 (Modifica payment.html)
