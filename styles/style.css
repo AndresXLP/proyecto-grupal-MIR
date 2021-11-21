@@ -11,6 +11,14 @@
   -o-background-size: cover;
   background-size: cover;
 }
+.my-custom-scrollbar {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
 @media (max-width: 600px) {
   .carousel-item {
     height: 200px;
